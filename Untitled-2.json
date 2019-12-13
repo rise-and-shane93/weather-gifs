@@ -1,0 +1,38 @@
+{
+    "coord": {
+        "lon": -84.92, "lat": 34.36
+    }
+    ,
+    "weather":[ {
+        "id": 803, "main": "Clouds", "description": "broken clouds", "icon": "04d"
+    }
+    ],
+    "base":"stations",
+    "main": {
+        "temp": 39.29, "pressure": 1014, "humidity": 60, "temp_min": 34, "temp_max": 42.8
+    }
+    ,
+    "visibility":16093,
+    "wind": {
+        "speed": 12.75, "deg": 330, "gust": 16.11
+    }
+    ,
+    "clouds": {
+        "all": 75
+    }
+    ,
+    "dt":1575289929,
+    "sys": {
+        "type": 1, "id": 3760, "country": "US", "sunrise": 1575289721, "sunset": 1575325786
+    }
+    ,
+    "timezone":-18000,
+    "id":0,
+    "name":"Adairsville",
+    "cod":200,
+    "keys": {
+        "google": "AIzaSyDnNkqJyGkWjJcQxN2dGcZr5KHnw1mlB7A",
+        "openweather": "7ce1fd394a7aaa5d61d9b5930c1b3513",
+        "giphy": "NK7bgE246YG7l7Rp55mggieuBzvJZ035"
+    }
+}

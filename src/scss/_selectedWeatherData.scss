@@ -1,0 +1,115 @@
+.renderedWeatherData,
+.selectedCityData {
+    position: relative;
+    background-color: lighten($lightLavender, 15%);
+    box-shadow: 0px 0px 15px 5px #888;
+    border: 5px solid darken($royalPurple, 25%);
+    border-radius: 10px;
+    @include mq('md') {
+        @include flexBox(column);
+    }
+
+    #deleteSelection {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .selected-gif {
+        max-width: 400px;
+    }
+
+    #addCity, #deleteSelection {
+        max-width: 200px;
+    }
+
+    #addCity {
+        align-self: center;
+    }
+
+    .additionalData {
+        @include flexBox(row, center, flex-end);
+        flex-wrap: wrap;
+
+        p {
+            border-top: 2px solid darken($royalPurple, 25%);
+            border-left: 2px solid darken($royalPurple, 25%);
+            margin-bottom: 0;
+            padding: 5px 10px;
+        }
+        p:nth-child(4) {
+            border-right: 2px solid darken($royalPurple, 25%);
+        }
+    }
+
+    .selected {
+        color: darken($royalPurple, 25%);
+        border: 1px solid darken($royalPurple, 25%);
+
+        &-location {
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', sans-serif;
+            color: darken($royalPurple, 25%);
+            // @include mq('md') {
+            //     align-self: flex-start;
+            // }
+        }
+
+    }
+}
+
+.user-selcted {
+    &-weather {
+        border: 4px solid $rosso;
+        @include mq('md') {
+            @include flexBox(row);
+        }
+
+        &:hover .icon-close {
+            cursor: pointer;
+            // display: flex;
+            transition: .3s;
+        }
+    }
+}
+
+.user-selected-title {
+    color: #222;
+    margin-top: 3rem;
+}
+
+.user-selected-child {
+    position: relative;
+    background-color: lighten($gold, 25%);
+    border-right: 2px solid darken($gold, 15%);
+    padding: 5px 10px;
+    min-width: 100%;
+    @include mq('md') {
+        min-width: 20%;
+    }
+
+    &:nth-child(6) {
+        border-right: none;
+    }
+
+    .icon-close {
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        transition: .3s;
+        border-radius: 50%;
+        background-color: $rosso;
+        width: 25px;
+        height: 25px;
+        color: lighten($cream, 15%);
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}

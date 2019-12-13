@@ -1,0 +1,24 @@
+select {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.selectLabel {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+.errors {
+    color: red;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+@include mq('md') {
+    .flexRow {
+        @include flexBox(row, center, center);
+    }
+}
